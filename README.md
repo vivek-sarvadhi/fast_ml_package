@@ -25,7 +25,7 @@ from sqlalchemy.ext.declarative import declarative_base
 app = FastAPI()
 base = declarative_base()
 engine = create_engine("your-database-connection-string")
-app.add_middleware(DBMiddleware, base=Base, engine=engine)'''
+app.add_middleware(DBMiddleware, base=Base, engine=engine)
 
 ## Contributing
 
