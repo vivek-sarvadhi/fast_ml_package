@@ -17,7 +17,7 @@ pip install library-name
 
 ## Usage:
 
-'''python
+```python
 from mymid.middleware import DBMiddleware
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
@@ -26,7 +26,7 @@ app = FastAPI()
 base = declarative_base()
 engine = create_engine("your-database-connection-string")
 app.add_middleware(DBMiddleware, base=Base, engine=engine)
-'''
+```
 ## Contributing
 
 Contributions are welcome! If you find a bug or have suggestions for improvements, please open an issue or submit a pull request.
